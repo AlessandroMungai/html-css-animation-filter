@@ -1,0 +1,192 @@
+.ex-1-square{
+    transition: 3s ease-in-out 0s;
+}
+
+.ex-1-square:hover{
+    background-color: red;
+    box-shadow:inset 0 0 0 5px darkred
+}
+
+.ex-2-square{
+    transition: 1s ease-in-out 0s;
+}
+
+.ex-2-square:active{
+    width: 100%;
+    background-color: green;
+}
+
+.ex-3-square{
+    transition: 2s ease-in-out 0s;
+}
+
+.ex-3-square:hover{
+    transform: rotate(360deg);
+    border-radius: 50%;
+    background-color: green;
+}
+
+.ex-4-square{
+    transition: 1s ease-in-out 0s;
+}
+
+.ex-4-square:active{
+    opacity: 0%;
+    transform: scale(0);
+}
+
+.ex-5-square{
+    transition: 1s ease-in-out 0s;
+}
+
+.ex-5-square:hover{
+    transform: scale(2);
+    background-color: green;
+}
+
+.ex-5-square:active{
+    transform: scale(.4);
+    background-color: darkred;
+}
+
+.ex-6-img:hover{
+    filter: grayscale(100%);
+}
+
+.ex-7-img{
+    transition: 3s ease-in-out 0s;
+}
+
+.ex-7-img:hover{
+    filter: brightness(1.8);
+    
+}
+
+.ex-8-img{
+    transition: 3s ease-in-out 0s;
+}
+
+.ex-8-img:hover{
+    border-radius: 15%;
+    filter: contrast(30) brightness(80)
+}
+
+.ex-9-img{
+    transition: 3s ease-in-out 0s;
+}
+
+.ex-9-img:hover{
+    transform: scale(1.5);
+    border-radius: 8px;
+    filter:blur(2px) grayscale(.7)
+}
+
+.ex-10-icon{
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0%{
+        transform: rotate(0);
+        opacity: 100%;
+        color: red;
+    }
+
+    50%{
+        transform: rotate(360deg);
+        opacity: 0%;
+    }
+
+    100%{
+        transform: rotate(360deg);
+        opacity: 100%;
+        color: green;
+    }
+}
+
+.ex-11-icon:hover{
+    animation: spin-revers 2s linear infinite;
+}
+
+@keyframes spin-revers {
+    0%{
+        transform: rotate(0);
+        
+    }
+
+    90%{
+        transform: rotate(260deg);
+    }
+
+    100%{
+        transform: rotate(0);
+    }
+
+}
+
+.ex-12-button:hover .ex-12-top-white {
+    animation: moving-topwhite 1s ease-in-out;
+}
+@keyframes moving-topwhite {
+
+    0% {
+        left: 10%;
+    }
+    50% {
+        left: calc(100% - 60px);
+    }
+    100% {
+        left: 10%;
+    }
+}
+
+
+/*qui ho sbirciato un pochino ;)*/
+
+.ex-12-button:hover .ex-12-bottom-white{
+    animation: moving-bottomwhite 1s ease-in-out;
+}
+
+@keyframes moving-bottomwhite{
+
+    0% {
+        right: 20%;
+    }
+    50% {
+        right: calc(100% - 60px);
+    }
+    100% {
+        right: 20%;
+    }
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+    animation: moving-bottomwhite-around 1s ease-in-out;
+}
+@keyframes moving-bottomwhite-around {
+    0% {
+        bottom: -10px;
+        right: 20%;
+    }
+    30% {
+        right: calc(100% - 30px);
+        bottom: -10px;
+    }
+    45% {
+        right: calc(100% - 30px);
+        bottom: 100%;
+    }
+    75% {
+        right: 0;
+        bottom: 100%;
+    }
+    90% {
+        right: -15px;
+        bottom: -10px;
+    }
+    100% {
+        bottom: -10px;
+        right: 20%;
+    }
+}
+
